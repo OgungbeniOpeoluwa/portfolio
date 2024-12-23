@@ -89,7 +89,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const HorizontalCardLayout = () => {
   const initialSections = [
-    { title: "About_me", icon: <i className="fa-solid fa-user fa-3x" style={{ color: "black" }}></i>, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900" },
+    { title: "About_me", icon: <i className="fa-solid fa-user fa-3x" style={{ color: "black" }}></i>, color: "bg-gradient-to-r from-gray-300 via-white to-gray-900" },
     { title: "Service", icon: <i className="fa-solid fa-briefcase fa-3x" style={{ color: "black" }}></i>, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900" },
     { title: "Experience & Education", icon: <i className="fa-solid fa-graduation-cap fa-3x" style={{ color: "black" }}></i>, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900" },
     { title: "Projects", icon: <i className="fa-solid fa-project-diagram fa-3x" style={{ color: "black" }}></i>, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900" },
