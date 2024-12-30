@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import HorizontalCardLayout from "../horizontalCardLayout";
+import CustomCursor from "../cursor";
 
 const HomePage = () => {
   const roles = ["Software Engineer", "Backend Engineer", "Frontend Engineer"];
@@ -42,6 +43,9 @@ const HomePage = () => {
         </div>
         <div>
         <HorizontalCardLayout/>
+        </div>
+        <div>
+        <CustomCursor/>
         </div>
       </div>
 
