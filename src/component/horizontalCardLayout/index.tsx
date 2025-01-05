@@ -13,11 +13,11 @@ const HorizontalCardLayout: React.FC = () => {
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   const initialSections = [
-    { title: "About_me", icon: faUser, color: "bg-gradient-to-r from-gray-300 via-white to-gray-900",content:<AboutMe/> },
-    { title: "Contact", icon: faBriefcase, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900",content:<ContactMe/> },
-    { title: "Experience & Education", icon: faGraduationCap, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900",content:<ExperienceAndEducation/> },
-    { title: "Projects", icon: faProjectDiagram, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900",content:<AboutMe/> },
-    { title: "Skills", icon: faTools, color: "bg-gradient-to-r from-gray-500 via-white to-gray-900",content:<AboutMe/> },
+    { title: "About_me", icon: faUser, color: "bg-gray-100",content:<AboutMe/> },
+    { title: "Contact", icon: faBriefcase, color: "bg-gray-100",content:<ContactMe/> },
+    { title: "Experience & Education", icon: faGraduationCap, color: "bg-gray-100",content:<ExperienceAndEducation/> },
+    { title: "Projects", icon: faProjectDiagram, color: "bg-gray-100",content:<AboutMe/> },
+    { title: "Skills", icon: faTools, color: "bg-gray-100",content:<AboutMe/> },
   ];
 
   const openSection = useCallback((index: number) => {
@@ -41,7 +41,7 @@ const HorizontalCardLayout: React.FC = () => {
             className={`group ${section.color} 
             w-36 h-36 sm:w-44 sm:h-40 flex items-center justify-center 
             transition-all duration-300 rounded-lg shadow-lg border-2 border-black text-black 
-            hover:w-48 sm:hover:w-60 hover:bg-gradient-to-r hover:from-gray-600 hover:via-white hover:to-gray-700 cursor-pointer`}
+            hover:w-48 sm:hover:w-60 hover:bg-gray cursor-pointer`}
             onClick={() => openSection(index)}
           >
             <div className="flex flex-col items-center space-y-2">
@@ -56,7 +56,7 @@ const HorizontalCardLayout: React.FC = () => {
 
       {activeSection !== null && (
         <div
-          className={`fixed inset-0 bg-black bg-opacity-50 z-40 flex items-end justify-center
+          className={`fixed top-0 right-0 bg-black bg-opacity-50 z-40 flex items-end justify-center
           transition-opacity duration-300 ${isAnimating ? "opacity-100" : "opacity-0"}`}
           onClick={closeSection}
         >
@@ -71,7 +71,7 @@ const HorizontalCardLayout: React.FC = () => {
                 {initialSections[activeSection].title}
               </h2>
               <div className="text-gray-600">
-                ${initialSections[activeSection].content}
+                {initialSections[activeSection].content}
               </div>
             </div>
             <div className="bg-gray-100 px-6 py-3 flex justify-end">
