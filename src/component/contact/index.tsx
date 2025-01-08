@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ContactForm from "../contactForm/contactForm";
 
 const handleSocialClick = (platform: "linkedin" | "instagram" | "facebook" | "twitter") => {

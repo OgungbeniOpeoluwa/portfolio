@@ -7,7 +7,7 @@ interface ModalProps {
   closeModal: () => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ showModal, fileType, handleAction, closeModal }) => {
+const Modal: React.FC<ModalProps> = ({ showModal,handleAction, closeModal }) => {
   if (!showModal) return null;
 
   return (
