@@ -3,15 +3,15 @@ import ContactForm from "../contactForm/contactForm";
 
 const handleSocialClick = (platform: "linkedin" | "instagram" | "facebook" | "twitter") => {
    const socialLinks: Record<string, string> = {
-     linkedin: "https://www.linkedin.com/in/opeoluwa-ogungbeni-578411146/", // Replace with your LinkedIn profile or message link
-     instagram: "https://www.instagram.com/direct/new/", // Opens Instagram Direct
-     facebook: "https://www.facebook.com/messages/t/your-profile-id", // Replace with your Facebook Messenger thread
-     twitter: "https://twitter.com/messages/compose?recipient_id=your-recipient-id", // Replace with the Twitter recipient ID
+     linkedin: "https://www.linkedin.com/in/opeoluwa-ogungbeni-578411146/", 
+     instagram: "https://www.instagram.com/direct/new/",
+     facebook: "https://www.facebook.com/messages/t/your-profile-id",
+     twitter: "https://twitter.com/messages/compose?recipient_id=your-recipient-id", 
    };
  
    const link = socialLinks[platform];
    if (link) {
-     window.open(link, "_blank"); // Opens the social media link in a new tab or app
+     window.open(link, "_blank"); 
    }
  };
  
