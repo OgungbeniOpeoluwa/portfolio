@@ -16,8 +16,8 @@ const HorizontalCardLayout: React.FC = () => {
     { title: "About_me", icon: faUser, color: "bg-gray-100",content:<AboutMe/> },
     { title: "Contact", icon: faBriefcase, color: "bg-gray-100",content:<ContactMe/> },
     { title: "Experience & Education", icon: faGraduationCap, color: "bg-gray-100",content:<ExperienceAndEducation/> },
-    { title: "Projects", icon: faProjectDiagram, color: "bg-gray-100",content:<AboutMe/> },
-    { title: "Skills", icon: faTools, color: "bg-gray-100",content:<AboutMe/> },
+    { title: "Projects", icon: faProjectDiagram, color: "bg-gray-100",content:null },
+    { title: "Skills", icon: faTools, color: "bg-gray-100",content:null },
   ];
 
   const openSection = useCallback((index: number) => {
