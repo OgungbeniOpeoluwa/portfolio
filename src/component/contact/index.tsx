@@ -6,7 +6,7 @@ const handleSocialClick = (platform: "linkedin" | "instagram" | "facebook" | "tw
      linkedin: "https://www.linkedin.com/in/opeoluwa-ogungbeni-578411146/", 
      instagram: "https://www.instagram.com/direct/new/",
      facebook: "https://www.facebook.com/messages/t/your-profile-id",
-     twitter: "https://twitter.com/messages/compose?recipient_id=your-recipient-id", 
+    //  twitter: "https://twitter.com/messages/compose?recipient_id=your-recipient-id", 
    };
  
    const link = socialLinks[platform];
